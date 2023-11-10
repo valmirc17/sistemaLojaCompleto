@@ -35,11 +35,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% orders.forEach(order => { %>
+                        <% Order.forEach(order => { %>
                         <tr>
                             <td><%= order.code %></td>
-                            
                             <td><%= order.total%></td>
+                            <td><a href="/deleteOrder/<%= order._id %>"><img src="/imgs/delete.png" alt="Apagar"></a></td>
+                            <td><a href="/findOrder/<%= order._id %>"><img src="/imgs/edit.png" alt="Editar"></a></td>
                         </tr>
                         <% }) %>
                     </tbody>

@@ -1,15 +1,9 @@
-import mongoose from "mongoose"
-//inportar a classe service
-//definir a estrutura de dados
-//nome, cpf e endereço
+import mongoose from 'mongoose'
 
-const client = new mongoose.Schema(
-    {
-        name: String,
-        cpf: String,
-        address: String
-    }
-)
+const client = new mongoose.Schema({
+    name: String,
+    cpf: String,
+    address: String,
+})
 
-
-export default client 
+export default client
